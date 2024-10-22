@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    text-align: center; /* Centrar el texto */
+}
+h1, h2 {
+    animation: fadeIn 1s ease-in; /* Animación de entrada */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+header {
+    margin-bottom: 20px;
+}
+nav {
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos de la barra */
+    gap: 15px; /* Espaciado entre elementos */
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #003d80; /* Color de fondo al pasar el ratón */
+}
+.etiquetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar etiquetas horizontalmente */
+    gap: 10px;
+    margin-top: 20px;
+}
+.etiqueta {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%; /* Ajustar el ancho de las etiquetas */
+    text-align: left; /* Alinear texto a la izquierda dentro de las etiquetas */
+    position: relative;
+    transition: background-color 0.2s;
+}
+.etiqueta:hover {
+    background-color: #0056b3;
+}
+.info {
+    display: none; /* Oculta la información por defecto */
+    background-color: #0056b3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in; /* Animación de entrada para la imagen */
+}
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
