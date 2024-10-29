@@ -16,21 +16,21 @@
             </div>
             <h1>Redes</h1>
         </div>
-        
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Artículos</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Sobre Nosotros</a></li>
+                <li><a href="modelo_osi.html">Modelo OSI</a></li> <!-- Enlace nuevo -->
             </ul>
         </nav>
+
     </header>
     <main>
         <article>
             <h2><strong>Introducción a las Redes</strong></h2>
             <p><strong>Las redes interconectan computadoras con distintos sistemas operativos, ya sea dentro de una empresa u organización (LANs) o por todo el mundo (WANs, Internet). Anteriormente se utilizaban básicamente para compartir los recursos de las computadoras conectadas. Hoy, las redes son medios de comunicación internacional a través de los cuales se intercambian grandes volúmenes de datos.</strong></p>
             
-            <h3><strong>Razones para la instalación de una red</strong></h3>
+            <h3><strong>Razones para la instalación de una Red</strong></h3>
             <ul>
                 <li><strong>Intercambio de programas, archivos e impresora.</strong></li>
                 <li><strong>Posibilidad de utilizar software de red.</strong></li>
@@ -40,6 +40,90 @@
                 <li><strong>Acceso a otros sistemas operativos.</strong></li>
                 <li><strong>Compartir recursos.</strong></li>
             </ul>
+            
+             <h3><strong>Topologías de Redes</strong></h3>
+             
+             <div class="section-cards">
+                <div class="section-card">
+                    <span>1</span>
+                    <h2>Topología de Bus</h2>
+                    <p>Todos los dispositivos están conectados a un único cable (bus). Es simple y económica, pero si el cable falla, toda la red se ve afectada.</p>
+                    <p>•	Ventajas: Económica y fácil de implementar.</p>
+                    <p>•	Desventajas: Un fallo en el cable principal afecta a toda la red.</p>
+                </div>
+                <div class="section-card">
+                    <span>2</span>
+                    <h2>Topología de Estrella</h2>
+                    <p>Todos los dispositivos están conectados a un hub o switch central. Es fácil de gestionar y si un dispositivo falla, los demás siguen funcionando, pero si el hub falla, toda la red se detiene.</p>
+                    <p>•	Ventajas: Fácil de gestionar; un fallo no afecta a toda la red.</p>
+                    <p>•	Desventajas: Dependencia del hub; si falla, toda la red se interrumpe.</p>
+                </div>
+                <div class="section-card">
+                    <span>3</span>
+                    <h2>Topología de Anillo</h2>
+                    <p>Cada dispositivo está conectado a dos otros, formando un anillo. Los datos circulan en una dirección. Es eficiente, pero un fallo en un solo dispositivo puede afectar toda la red.</p>
+                    <p>•	Ventajas: Eficiente en el flujo de datos.</p>
+                    <p>•	Desventajas: Un fallo en un dispositivo afecta a toda la red.</p>
+                </div>
+                <div class="section-card">
+                    <span>4</span>
+                    <h2>Topología de Malla</h2>
+                    <p>Cada dispositivo está conectado a varios otros, lo que proporciona múltiples rutas para los datos. Es muy fiable, pero costosa y complicada de implementar.</p>
+                    <p>•	Ventajas: Alta fiabilidad; múltiples rutas para los datos.</p>
+                    <p>•	Desventajas: Costosa y compleja de implementar.</p>
+                </div>
+                <div class="section-card">
+                    <span>5</span>
+                    <h2>Topología Híbrida</h2>
+                    <p>Combina dos o más topologías. Ofrece flexibilidad y puede adaptarse a las necesidades específicas de una organización.</p>
+                    <p>•	Ventajas: Flexibilidad y adaptabilidad.</p>
+                    <p>•	Desventajas: Puede ser compleja y costosa de gestionar.</p>
+                </div>
+             </div>
+            
+             <h3><strong>Clasificación de Topologías de Redes</strong></h3>
+             
+             <div class="section-cards">
+                <div class="section-card">
+                    <span>1</span>
+                    <h2>Topologías Físicas</h2>
+                    <p>Reflejan la disposición real de los dispositivos y cables. Ejemplos:</p>
+                    <p>•	Bus</p>
+                    <p>•	Estrella</p>
+                    <p>•	Anillo</p>
+                    <p>•	Malla</p>
+                    <p>•	Híbrida</p>
+                </div>
+                <div class="section-card">
+                    <span>2</span>
+                    <h2>Topologías Lógicas</h2>
+                    <p>Se centran en cómo fluye la información en la red. Ejemplos:</p>
+                    <p>•	Lógica de Bus</p>
+                    <p>•	Lógica de Estrella</p>
+                    <p>•	Lógica de Anillo</p>
+                </div>
+                <div class="section-card">
+                    <span>3</span>
+                    <h2>Topologías de Red</h2>
+                    <p>Basadas en la interconexión:</p>
+                    <p>•	Centralizadas: Puntos de control (ej., Estrella).</p>
+                    <p>•	Descentralizadas: Sin un punto central (ej., Malla).</p>
+                </div>
+                <div class="section-card">
+                    <span>4</span>
+                    <h2>Topologías de Comunicación</h2>
+                    <p>Dependiendo del método de comunicación:</p>
+                    <p>•	Uni-direccional: Flujo de datos en una dirección (ej., Anillo).</p>
+                    <p>•	Bi-direccional: Flujo en ambas direcciones (ej., Estrella).</p>
+                </div>
+                <div class="section-card">
+                    <span>5</span>
+                    <h2>Topologías por Escalabilidad</h2>
+                    <p></p>
+                    <p>•	Escalables: Fáciles de expandir (ej., Estrella).</p>
+                    <p>•	No escalables: Difíciles de expandir sin comprometer el rendimiento (ej., Bus).</p>
+                </div>
+             </div>
         </article>
     </main>
     <footer>

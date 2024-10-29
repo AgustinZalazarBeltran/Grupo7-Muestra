@@ -21,27 +21,49 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="quienessomos.html">Sobre Nosotros</a></li>
-                <li><a href="modelo_osi.html">Modelo OSI</a></li> <!-- Enlace nuevo -->
+                <li><a href="modelo_osi.html">Modelo OSI</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <div class="image-container">
-        <div class="image" onclick="showInfo('info1')">
+        <div class="card" onclick="showInfo('info1')">
             <img src="https://github.com/AgustinZalazarBeltran/Grupo7-Muestra/blob/main/wikisagus/Esteban.jpg?raw=true" alt="Participante 1">
+            <div class="card-info">
+                <h2>Esteban Lopez</h2>
+                <p>Puesto: Gerente de Proyectos</p>
+                <p>Colegio Florentino Ameghino</p>
+                <p>15 Años</p>
+                <p>Curso:4i</p>
+            </div>
         </div>
-        <div class="image" onclick="showInfo('info2')">
-            <img src="https://github.com/AgustinZalazarBeltran/Grupo7-Muestra/blob/main/wikisagus/Agustin.jpg?raw=true" alt="Participante 2">
+        <div class="card" onclick="showInfo('info2')">
+            <img src="./img/agustin.png" alt="Participante 2">
+            <div class="card-info">
+                <h2>Agustin Zalazar</h2>
+                <p>Colegio Florentino Ameghino</p>
+                <p>16 Años</p>
+                <p>Curso:4i</p>
+                <p>Soy un estudiante de la carrera informatica cursando de 7:30 a 18:00hs</p>
+            </div>
         </div>
-        <div class="image" onclick="showInfo('info3')">
-            <img src="https://github.com/AgustinZalazarBeltran/Grupo7-Muestra/blob/main/wikisagus/Tobias.jpg?raw=true" alt="Participante 3">
+        <div class="card" onclick="showInfo('info3')">
+            <img src="./img/tobias.png" alt="Participante 3">
+            <div class="card-info">
+                <h2>Tobias Martin</h2>
+                <p>Estudiante</p>
+                <p>Colegio Florentino Ameghino</p>
+                <p>16 Años</p>
+                <p>Curso:4I</p>
+                <p>Ig _tobyyy.24</p>
+            </div>
         </div>
     </div>
 
     <div class="info-popup" id="info1">
         <div class="info-content">
             <span class="close" onclick="closeInfo('info1')">&times;</span>
-            <h2>Nombre 1</h2>
+            <h2>Esteban Lopez</h2>
             <p>Puesto: Gerente de Proyectos</p>
             <p>Nombre de la Empresa: Empresa XYZ</p>
             <p>Edad: 30</p>

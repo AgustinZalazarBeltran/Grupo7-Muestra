@@ -1,3 +1,15 @@
+@keyframes girarLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
 
 body {
     font-family: Arial, sans-serif;
@@ -14,32 +26,78 @@ h1, h2 {
     to { opacity: 1; }
 }
 header {
-    margin-bottom: 20px;
-}
-nav {
-    margin-bottom: 20px;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centrar los elementos de la barra */
-    gap: 15px; /* Espaciado entre elementos */
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-    text-decoration: none;
+    background-color: #007bff;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0056b3;
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
 }
+
+header .logo {
+margin-right: 15px; /* Espacio entre logo y título */
+}
+
+header .logo img {
+width: 40px; /* Tamaño reducido del logo */
+cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+}
+
+header h1 {
+margin: 0;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin-right: 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
 nav ul li a:hover {
     background-color: #003d80; /* Color de fondo al pasar el ratón */
 }
+
+header {
+    display: flex;
+  
+  }
+  
+  .titulo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo > a > img {
+    width: 60px;
+    margin-bottom: 0;
+    animation-name: girarLogo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+
 .etiquetas {
     display: flex;
     flex-direction: column;
@@ -69,13 +127,31 @@ nav ul li a:hover {
     margin-top: 5px;
     text-align: left; /* Alinear texto a la izquierda */
 }
-img {
+.img_logo {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
     animation: slideIn 1s ease-in; /* Animación de entrada para la imagen */
+}
+.imagen_osi {
+    margin-top: 3%;
+    width: 600px;
+    height: 300px;
 }
 @keyframes slideIn {
     from { transform: translateY(-20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+}
+footer {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    margin-top: 3%;
 }
