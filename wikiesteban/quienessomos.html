@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="quienessomos.css">
+</head>
+<body>
+    
+    <header>
+        <div class="titulo">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://easystem.co/wp-content/uploads/2020/05/redes-empresariales.png" alt="Logo de Redes" />
+                </a>
+            </div>
+            <h1>Redes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Sobre Nosotros</a></li>
+                <li><a href="modelo_osi.html">Modelo OSI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <div class="card" onclick="showInfo('info1')">
+            <img src="./img/Esteban.png" alt="Participante 1">
+            <div class="card-info">
+                <h2>Esteban Lopez</h2>
+                <p>Puesto: Gerente de Proyectos</p>
+                <p>Colegio Florentino Ameghino</p>
+                <p>15 Años</p>
+                <p>Curso:4i</p>
+            </div>
+        </div>
+        <div class="card" onclick="showInfo('info2')">
+            <img src="./img/agustin.png" alt="Participante 2">
+            <div class="card-info">
+                <h2>Agustin Zalazar</h2>
+                <p>Colegio Florentino Ameghino</p>
+                <p>16 Años</p>
+                <p>Curso:4i</p>
+                <p>Soy un estudiante de la carrera informatica cursando de 7:30 a 18:00hs</p>
+            </div>
+        </div>
+        <div class="card" onclick="showInfo('info3')">
+            <img src="./img/tobias.png" alt="Participante 3">
+            <div class="card-info">
+                <h2>Tobias Martin</h2>
+                <p>Estudiante</p>
+                <p>Colegio Florentino Ameghino</p>
+                <p>16 Años</p>
+                <p>Curso:4I</p>
+                <p>Ig _tobyyy.24</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-popup" id="info1">
+        <div class="info-content">
+            <span class="close" onclick="closeInfo('info1')">&times;</span>
+            <h2>Esteban Lopez</h2>
+            <p>Puesto: Gerente de Proyectos</p>
+            <p>Nombre de la Empresa: Empresa XYZ</p>
+            <p>Edad: 30</p>
+            <p>País: País 1</p>
+        </div>
+    </div>
+
+    <div class="info-popup" id="info2">
+        <div class="info-content">
+            <span class="close" onclick="closeInfo('info2')">&times;</span>
+            <h2>Nombre 2</h2>
+            <p>Puesto: Desarrollador</p>
+            <p>Nombre de la Empresa: Empresa ABC</p>
+            <p>Edad: 28</p>
+            <p>País: País 2</p>
+        </div>
+    </div>
+
+    <div class="info-popup" id="info3">
+        <div class="info-content">
+            <span class="close" onclick="closeInfo('info3')">&times;</span>
+            <h2>Nombre 3</h2>
+            <p>Puesto: Diseñador Gráfico</p>
+            <p>Nombre de la Empresa: Empresa 123</p>
+            <p>Edad: 26</p>
+            <p>País: País 3</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(infoId) {
+            document.getElementById(infoId).style.display = 'flex';
+        }
+
+        function closeInfo(infoId) {
+            document.getElementById(infoId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
